@@ -4,7 +4,7 @@ let sentenceBeginning = "The symtoms of Covid-19 are"
 const symtoms = ["cough", "fever", "exhaustion", "loss of sense of smell", "difficulty breathing"]
 const mySymtoms = [];
 // This loop will go through each symtom, concatenate it to our sentence, and push it into a new array of our own personal symtoms
-for(let i = 0; i < symtoms.length; i++){
+for (let i = 0; i < symtoms.length; i++) {
     sentenceBeginning += ` ${symtoms[i]}`
     mySymtoms.push(symtoms[i])
 }
@@ -14,7 +14,7 @@ for(let i = 0; i < symtoms.length; i++){
 // Copy and paste the following code block into your file
 
 let taco;
-function tacoTruck(shellType, toppings){
+function tacoTruck(shellType, toppings) {
     taco = `A ${shellType} taco with ${toppings}`
 }
 
@@ -25,7 +25,7 @@ function tacoTruck(shellType, toppings){
 
 // Write a function that accepts two parameters, first and last name. The function should return a greeting to that person using their full name. Then log the greeting to the console outside the function
 
-function greeting(firstName, lastName){
+function greeting(firstName, lastName) {
     const greetSentence = `Salutations ${firstName} ${lastName}!`
     return greetSentence
 }
@@ -53,7 +53,7 @@ for (let currentNumber = 1; currentNumber <= 100; currentNumber++) {
         console.log("ChickenMonkey")
     } else if (currentNumber % 5 === 0) {
         console.log("Chicken")
-    } else if (currentNumber % 7 ===0) {
+    } else if (currentNumber % 7 === 0) {
         console.log("Monkey")
     } else {
         console.log(currentNumber)
@@ -109,29 +109,29 @@ console.log(under)
 // Copy the following objects into your JavaScript file.
 
 const hamburger = {
-	name: 'Hamburger',
-	type: 'beef',
-	cooked: false,
+    name: 'Hamburger',
+    type: 'beef',
+    cooked: false,
 }
 const zucchini = {
-	name: 'Zucchini',
-	type: 'vegetable',
-	cooked: false,
+    name: 'Zucchini',
+    type: 'vegetable',
+    cooked: false,
 }
 const chickenBreast = {
-	name: 'Chicken Breast',
-	type: 'chicken',
-	cooked: false,
+    name: 'Chicken Breast',
+    type: 'chicken',
+    cooked: false,
 }
 const corn = {
-	name: 'Corn',
-	type: 'vegetable',
-	cooked: false,
+    name: 'Corn',
+    type: 'vegetable',
+    cooked: false,
 }
 const steak = {
-	name: 'Steak',
-	type: 'beef',
-	cooked: false,
+    name: 'Steak',
+    type: 'beef',
+    cooked: false,
 }
 
 // // An array that is grouping the objects together.
@@ -144,7 +144,7 @@ const cookedFood = [];
 
 // The grill() function. Copy this into your JavaScript as well.
 
-function grill (currentObject) {
+function grill(currentObject) {
     // Modify the food so that it is cooked
     currentObject.cooked = true;
 
@@ -153,7 +153,7 @@ function grill (currentObject) {
 };
 
 // Your task is to iterate over the array of foods and invoke the function for each item so that the cookedFood array contains all of the items after they are cooked.
-for(let i = 0; i < foods.length; i++ ) {
+for (let i = 0; i < foods.length; i++) {
     grill(foods[i])
 }
 
@@ -194,11 +194,12 @@ console.log(cookedFood)
 
 //     At the top of the developer tools panel, you will see the word Console. Click on that word. The console.log() statement will output any message into this panel in your developer tools. You can try it out immediately by clicking in the Console panel, and typing console.log("Hello, world!"), and then pressing your return key.
 
-function addExcitement() {
-    console.log("I am so excited and I just can't hide it!")
-}
+// function addExcitement(sentenceInput) {
+//     console.log(sentenceInput)
+// }
 
-addExcitement();
+
+// addExcitement("I am so excited and I just can't hide it");
 
 // Practice: Stacking Words
 
@@ -258,18 +259,20 @@ addExcitement();
 // // Invoke the function and pass in the array
 // addExcitement(sentence)
 
-let sentence = ["The","walrus","danced","through","the","trees","in","the","light","of","the","moon"];
+// let sentence = ["The","walrus","danced","through","the","trees","in","the","light","of","the","moon"];
 
-function addExcitement (wordAray) {
-    let buildMeUp = ""
+// function addExcitement (theWordArray) {
+//     let buildMeUp = ""
 
-    for(let i = 0; i < wordAray.length; i++) {
-        buildMeUp += `${wordAray[i]} `
-        console.log(buildMeUp)
-    }
-}
+//     for(let i = 0; i < theWordArray.length; i++) {
+//         buildMeUp += `${theWordArray[i]} `
+//         console.log(buildMeUp)
+//     }
+// }
 
-addExcitement(sentence);
+// addExcitement(sentence);
+
+
 // Practice: Some words are more exciting than others
 
 //     The learning objective of this exercise is to use the JavaScript if statement inside a loop to do one operation when a certain conditions is true, and a different operation if that condition is false.
@@ -283,21 +286,19 @@ addExcitement(sentence);
 // function addExcitement (theWordArray) {
 //     let buildMeUp = ""
 
-//     for (let i = 0; i < theWordArray.length; i++) {
-//         /*
-//             If the current word's place (not index) in the array
-//             is evenly divisible by 3, add an exclamation point
-//             to the end of the word and then concatenate it to
-//             `buildMeUp`.
+//         for(let i = 0; i < theWordArray.length; i++) {
 
-//             Otherwise, just concatenate the word itself.
-//          */
+//             if((i + 1) % 3 === 0 ){
+//                 buildMeUp += `${theWordArray[i]}! `  
+//             } else(
+//                 buildMeUp += `${theWordArray[i]} `
+//             )
+//             console.log(buildMeUp)
+//         }
 
-
-//         // Print buildMeUp to the console
 //     }
 
-// }
+//     addExcitement(sentence);
 
 
 
@@ -360,6 +361,27 @@ addExcitement(sentence);
 
 //     etc..
 
+// let sentence = ["The", "walrus", "danced", "through", "the", "trees", "in", "the", "light", "of", "the", "moon"];
+
+// function addExcitement(theWordArray, punctuation) {
+//     let buildMeUp = ""
+
+//     for (let i = 0; i < theWordArray.length; i++) {
+
+//         if ((i + 1) % 3 === 0) {
+//             buildMeUp += `${theWordArray[i]}${punctuation} `
+//         } else {
+//             buildMeUp += `${theWordArray[i]} `
+//         }
+//         console.log(buildMeUp)
+//     }
+
+// }
+
+// addExcitement(sentence, "?");
+
+
+
 // Challenge: Multiple Punctuation
 
 //     Challenges are optional exercises that you can work once you've completed all the practice exercises and understand the concepts in them.
@@ -387,8 +409,62 @@ addExcitement(sentence);
 
 //     etc..
 
+
+// let sentence = ["The", "walrus", "danced", "through", "the", "trees", "in", "the", "light", "of", "the", "moon"];
+
+// function addExcitement(theWordArray, punctuation, numPunctuation) {
+//     let buildMeUp = ""
+
+//     for (let i = 0; i < theWordArray.length; i++) {
+
+//         if ((i + 1) % 3 === 0) {
+//             buildMeUp += theWordArray[i]
+//             for (let k = 0; k < numPunctuation; k++) {
+//                 buildMeUp += punctuation
+//             }
+//             buildMeUp += " "
+
+
+//         } else {
+//             buildMeUp += `${theWordArray[i]} `
+//         }
+//         console.log(buildMeUp)
+//     }
+
+// }
+
+// addExcitement(sentence, "?", "4");
+
+
+
 // Challenge: Arrow Functions
 
 //     Challenges are optional exercises that you can work once you've completed all the practice exercises and understand the concepts in them.
 
 // Watch the video (see above) about arrow functions, and see if you can rewrite addExcitement using that syntax.
+
+let sentence = ["The", "walrus", "danced", "through", "the", "trees", "in", "the", "light", "of", "the", "moon"];
+
+let addExcitement = (theWordArray, punctuation, numPunctuation) => {
+
+    let buildMeUp = ""
+
+        for (let i = 0; i < theWordArray.length; i++) {
+    
+            if ((i + 1) % 3 === 0) {
+                buildMeUp += theWordArray[i]
+                for (let k = 0; k < numPunctuation; k++) {
+                    buildMeUp += punctuation
+                }
+                buildMeUp += " "
+    
+    
+            } else {
+                buildMeUp += `${theWordArray[i]} `
+            }
+            console.log(buildMeUp)
+        }
+}
+
+
+addExcitement(sentence, "?", "4");
